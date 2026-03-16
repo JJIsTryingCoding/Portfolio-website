@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Settingsgaard Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Iconv2.png">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-top">
+            <div class="Logo-btn"></div>
+        </div>
+        <div class="sidebar-bottom">
+            <button class="About-btn">About</button>
+            <button class="Contact-btn">Contact</button>
+        </div>
+    </nav>
+
+    <main class="content">
+        <header class="top-nav">
+            <button class="green-btn" data-filter="illustration">Illustration</button>
+            <button class="green-btn" data-filter="graphic">Graphic Design</button>
+            <button class="green-btn" data-filter="misc">Misc.</button>
+        </header>
+
+        <div id="home-screen" class="home-screen">
+            <h2 class="home-title">Welcome</h2>
+            <p class="home-text">Press the buttons above to view the gallery.</p>
+        </div>
+
+        <div id="about-screen" class="about-screen hidden">
+            <h2 class="about-title">About</h2>
+            <p class="about-text">My name is James Settingsgaard. I'm a junior illustration major at Columbus College of Art and Design working toward a bfa. I've made Logos for local businesses and I've won a Gold medal during the 2019 Scholastic Art and Writing Awards. All in all, I make art and I like doing it.</p>
+        </div>
+
+        <div id="contact-screen" class="contact-screen hidden">
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-text">Phone: (937) 660-0938</p>
+            <p class="contact-text">Email: jjsetts@gmail.com</p>
+            <p class="contact-text"><a href="https://www.instagram.com/doop_scoot_art/" target="_blank">Instagram: @doop_scoot_art</a></p>
+        </div>
+
+        <section class="gallery hidden">
+            <div class="img-card" data-category="illustration"><img src="Art/Sunseeker_Splash1.jpg" alt="Gallery Image"></div>
+            <div class="img-card" data-category="illustration"><img src="Art/Sunseeker_Splash2.jpg" alt="Gallery Image"></div>
+            <div class="img-card" data-category="illustration"><img src="Art/Sunseeker_Vignette.jpg" alt="Gallery Image"></div>
+            <div class="img-card" data-category="graphic"><img src="Art/Sir_Klein.png" alt="Gallery Image"></div>
+            <div class="img-card" data-category="graphic"><img src="Art/Sir_Schwars.png" alt="Gallery Image"></div>
+            <div class="img-card" data-category="graphic"><img src="Art/AllTogetherNow.png" alt="Gallery Image"></div>
+            <div class="img-card" data-category="graphic"><img src="Art/BeavPower.png" alt="Gallery Image"></div>
+            <div class="img-card" data-category="misc"><img src="Art/Concepts1.PNG" alt="Gallery Image"></div>
+            <div class="img-card" data-category="misc"><img src="Art/Concepts2.PNG" alt="Gallery Image"></div>
+            <div class="img-card" data-category="misc"><img src="Art/Concepts3.PNG" alt="Gallery Image"></div>
+            <div class="img-card" data-category="misc"><img src="Art/Port-R_Turnaround.jpg" alt="Gallery Image"></div>
+            <div class="img-card" data-category="misc"><img src="Art/Sunseeker_Props.jpg" alt="Gallery Image"></div>
+            <div class="img-card" data-category="misc"><img src="Art/Sunseeker_SplashCon.PNG" alt="Gallery Image"></div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" alt="lightbox con" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
